@@ -154,7 +154,7 @@ def download_video(url, height):
         return filename, info.get("title", "video")
 
 # --- Streamlit UI ---
-st.title("🎬 YouTube Downloader")
+st.subheader("🎬 YouTube Downloader")
 
 url = st.text_input("Enter YouTube video URL:")
 choice = st.radio("Download as:", ["Audio", "Video"])
